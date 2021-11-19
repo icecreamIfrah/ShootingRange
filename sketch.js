@@ -70,9 +70,9 @@ function draw() {
       handleGameover(redBubbleGroup);
     }
     
-    /*if(blueBubbleGroup.collide(bulletGroup)){
+    if(blueBubbleGroup.collide(bulletGroup)){
       handleBubbleCollision(blueBubbleGroup);
-    }*/
+    }
 
     if(redBubbleGroup.collide(bulletGroup)){
       handleBubbleCollision(redBubbleGroup);
@@ -115,8 +115,8 @@ function handleBubbleCollision(bubbleGroup){
        score=score+1;
     }
 
-    /* blast= createSprite(bullet.x+60, bullet.y, 50,50);
-    blast.addImage(blastImg) */
+     blast= createSprite(bullet.x+60, bullet.y, 50,50);
+    blast.addImage(blastImg) 
 
     blast.scale=0.3
     blast.life=20
